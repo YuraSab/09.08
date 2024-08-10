@@ -3,8 +3,42 @@ body{
     overflow-x: hidden;
 }
 
+h1{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 77px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+}
+
+h5{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+}
 
 
+/*  GLOBAL STYLES  */
+.blue_text{
+    color: #4252D1;
+}
+.red_text{
+    color: #FF3459;
+}
+.underline_text{
+    text-decoration: underline;
+}
+
+
+/*  HEADER  */
 header{
     padding: 35px 250px;
     display: flex;
@@ -17,14 +51,14 @@ header{
 }
 
 .header_card{
-    background: #302E5A;
+    height: 40px;
+    width: 140px;
     border-radius: 10px;
+    background: #302E5A;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    width: 140px;
-    height: 40px;
 }
 .header_card svg{
     height: 16px;
@@ -38,11 +72,7 @@ header{
     color: white;
 }
 
-
-
-
-
-/*    MAIN    */
+/*  MAIN  */
 main{
     padding: 75px 250px 30px;
 }
@@ -55,72 +85,14 @@ main{
     grid-template-columns: 6fr 4fr;
     gap: 50px 100px;
 }
+
+/*  INTRO BLOCK  */
 .intro_block{
     grid-area: intro_block;
 }
-.info_block{
-    grid-area: info_block;
-}
-.form_block{
-    grid-area: form_block;
-}
-
-
-
-
-
-.webinar_button{
-    background-color: #4252D1;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-
-    height: fit-content;
-    width: fit-content;
-    padding: 6px 12px;
-}
-.webinar_button svg{
-    height: 20px;
-    width: 20px;
-}
-
-.webinar_button p{
-    font-family: 'Nunito', sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 16px;
-    color: white;
-    margin: 0;
-}
-
-
 .intro_block h1{
-    font-family: 'Poppins', sans-serif;
-    font-size: 77px;
-    font-weight: 800;
     color: #FF3459;
-    text-transform: uppercase;
-    margin: 0;
 }
-
-.from_scratch_block{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 20px;
-}
-
-.from_scratch_block h4{
-    font-family: 'Poppins', sans-serif;
-    font-size: 22px;
-    font-weight: 600;
-    color: white;
-    margin: 0;
-}
-
-
 .intro_block p{
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
@@ -129,173 +101,160 @@ main{
     color: white;
 }
 
-
-.blue_text{
-    color: #4252D1;
+.webinar_button{
+    height: fit-content;
+    width: fit-content;
+    padding: 6px 12px;
+    border-radius: 5px;
+    background-color: #4252D1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.webinar_button svg{
+    height: 20px;
+    width: 20px;
+}
+.webinar_button p{
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    color: white;
 }
 
+.from_scratch_block{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+.from_scratch_block h4{
+    margin: 0;
+}
 
+/*  INFO BLOCK  */
+.info_block{
+    grid-area: info_block;
+}
 
 .info_block_item{
+    padding-bottom: 30px;
     display: grid;
     grid-template-areas:
     "img title"
     "img text";
     grid-template-columns: 60px 1fr;
     gap: 4px 10px;
-    padding-bottom: 30px;
 }
-
 .info_block_item img{
     grid-area: img;
     height: 50px;
     width: 50px;
     border-radius: 50%;
 }
-
 .info_block_item h5{
     grid-area: title;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
     line-height: 16px;
-    color: white;
     margin: 0;
 }
 .info_block_item p{
     grid-area: text;
+    margin: 0;
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
     font-size: 12px;
+    font-weight: 400;
     line-height: 18px;
     color: white;
-    margin: 0;
 }
 
-
-
-
-
-
-
+/*  FORM BLOCK  */
 .form_block{
-    background-color: #303A53;
-    border-radius: 10px;
+    grid-area: form_block;
     padding: 40px;
-
+    border-radius: 10px;
+    background-color: #303A53;
 }
-
 .form_block h4{
-    font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    font-size: 22px;
     line-height: 26px;
     text-align: center;
-    color: white;
 }
-
 .form_block button{
-    /*50*/
-    border: none;
-    background-color: #FF3459;
-    padding: 13px 0;
     width: 100%;
+    padding: 13px 0;
+    border: none;
     border-radius: 5px;
+    background-color: #FF3459;
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     font-weight: 700;
     line-height: 24px;
     color: white;
 }
-
 .form_block input{
-    background-color: #272D3D;
-    color: #D7D7D7;
     width: 100%;
+    padding: 13px 20px;
+    margin-bottom: 18px;
+    box-sizing: border-box;
     border: none;
     border-radius: 5px;
-    padding: 13px 20px;
-    box-sizing: border-box;
-
+    background-color: #272D3D;
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
     font-size: 13px;
+    font-weight: 400;
     line-height: 24px;
-
-    margin-bottom: 18px;
+    color: #D7D7D7;
 }
-
 .form_block p{
-
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
-    text-align: center;
-    color: gray;
     margin: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    color: gray;
+    text-align: center;
 }
 
 
-
-.red_text{
-    color: #FF3459;
-}
-
-.underline_text{
-    text-decoration: underline;
-}
-
-
-
-
-
+/*  FOOTER BLOCK */
 footer h1{
     width: 100%;
-    margin: 0;
+    opacity: 0.5;
     /*font-size: 8vw;*/
     font-size: 8.3vw;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-    color: #242731;
     text-shadow:
             1px 1px 0 grey,
             -1px -1px 0 grey,
             1px -1px 0 grey,
             -1px 1px 0 grey;
     text-align: center;
-    text-transform: uppercase;
-    opacity: 0.5;
+    color: #242731;
 }
 
 
-
-
+/*   FREE POSITIONING ICONS AND GRADIENTS   */
 .free_icons_block{
-    width: 160px;
     height: auto;
-    /*position: fixed;*/
+    width: 160px;
     position: absolute;
     right: 2vw;
-    /*135 + 75 */
     top: 250px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-
 .free_icons_block div{
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-
 .free_icons_block img{
     height: 75px;
     width: auto;
 }
-
-
 
 .rotate-left {
     transform: rotate(-20deg);
@@ -321,12 +280,14 @@ footer h1{
     height: 61px;
 }
 
-
 #gradient_right {
-    position: absolute;
-    z-index: -2;
-    width: 850px;
     height: 850px;
+    width: 850px;
+    position: absolute;
+    right: -200px;
+    top: -170px;
+    bottom: 0;
+    z-index: -2;
     background: radial-gradient(circle at center,
     rgba(51, 47, 101, 0.9) 0%,
     rgba(51, 47, 101, 0.4) 45%,
@@ -334,17 +295,16 @@ footer h1{
     rgba(36, 39, 49, 0) 100%
     );
     border-radius: 50%;
-    bottom: 0;
-    top: -170px;
-    right: -200px;
 }
 
-
 #gradient_left {
-    position: absolute;
-    z-index: -2;
-    width: 500px;
     height: 500px;
+    width: 500px;
+    position: absolute;
+    left: -100px;
+    top: -100px;
+    bottom: 0;
+    z-index: -2;
     background: radial-gradient(circle at center,
     rgba(51, 47, 101, 0.9) 0%,
     rgba(51, 47, 101, 0.4) 45%,
@@ -352,7 +312,4 @@ footer h1{
     rgba(36, 39, 49, 0) 100%
     );
     border-radius: 50%;
-    bottom: 0;
-    top: -100px;
-    left: -100px;
 }
