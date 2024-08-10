@@ -35,8 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Send data to telegram
         const token = '7230681799:AAFAZRBa1tC9V2MXzHpkEvoHHeSYVACT1f0';
-        const chatId = '6163382681';
-        // const chatId = '817632151';
+        const chatId = '-4164289239';
 
         const message = `Нове повідомлення:\nІм'я: ${name}\nТелефон: ${phone}\nEmail: ${email}`;
 
