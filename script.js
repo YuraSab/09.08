@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
     const input = document.querySelector("#phone");
     const iti = window.intlTelInput(input, {
@@ -34,8 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Форма валідна. Ім\'я:', name, 'Телефон:', phone, 'Email:', email);
 
         // Send data to telegram
-        const token = '7230681799:AAFAZRBa1tC9V2MXzHpkEvoHHeSYVACT1f0';
-        const chatId = '-4164289239';
+        const token = window.CONFIG.TOKEN;
+        const chatId = window.CONFIG.CHAT_ID;
 
         const message = `Нове повідомлення:\nІм'я: ${name}\nТелефон: ${phone}\nEmail: ${email}`;
 
