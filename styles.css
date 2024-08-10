@@ -217,6 +217,15 @@ main{
     color: gray;
     text-align: center;
 }
+/* Especially for phone library */
+#phone {
+    width: 100%;
+    box-sizing: border-box;
+}
+.iti {
+    width: 100%;
+    margin-bottom: 18px;
+}
 
 
 /*  FOOTER BLOCK */
