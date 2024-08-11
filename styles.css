@@ -43,6 +43,12 @@ header{
     padding: 35px 250px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    width: 182px;
+    height: 56px;
 }
 
 .header_cards_block{
@@ -135,6 +141,12 @@ main{
     margin: 0;
 }
 
+.from_scratch_block svg{
+    height: 46px;
+    width: 109px;
+}
+/*width="109" height="46"*/
+
 /*  INFO BLOCK  */
 .info_block{
     grid-area: info_block;
@@ -172,6 +184,7 @@ main{
 
 /*  FORM BLOCK  */
 .form_block{
+    height: fit-content;
     grid-area: form_block;
     padding: 40px;
     border-radius: 10px;
@@ -322,3 +335,213 @@ footer h1{
     );
     border-radius: 50%;
 }
+
+
+
+/*  HEADER RESPONSIVE STYLES  */
+@media screen and (max-width: 1100px) {
+    header{
+        padding: 35px 70px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    header{
+        padding: 35px 50px;
+    }
+    .header_cards_block{
+        gap: 10px;
+    }
+    .header_card{
+        height: 36px;
+        width: 120px;
+    }
+    #logo{
+        width: 136px;
+        height: 42px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    header{
+        padding: 30px;
+    }
+    .header_card{
+        height: 30px;
+        width: 50px;
+    }
+    .header_card p{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    header{
+        padding: 20px;
+    }
+    .header_card{
+        height: 30px;
+        width: 30px;
+    }
+}
+
+
+/*  MAIN RESPONSIVE STYLES*/
+@media screen and (max-width: 1375px) {
+    .main_block{
+        grid-template-columns: 1fr 1fr;
+        gap: 50px 50px;
+    }
+    .intro_block h1{
+        font-size: 50px;
+    }
+}
+
+
+/*  MAIN RESPONSIVE STYLES*/
+@media screen and (max-width: 1175px) {
+    .intro_block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main_block{
+        grid-template-areas:
+            "intro_block"
+            "info_block"
+            "form_block";
+        grid-template-columns: 1fr;
+        gap: 50px 100px;
+    }
+    .intro_block h1{
+        font-size: 70px;
+    }
+    .intro_block p{
+        text-align: center;
+    }
+    .from_scratch_block{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 975px) {
+    main{
+        padding: 75px 100px 30px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    main{
+        padding: 75px 50px 30px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .intro_block h1{
+        font-size: 46px;
+    }
+    .intro_block p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .webinar_button svg{
+        height: 17px;
+        width: 17px;
+    }
+    .webinar_button p{
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .from_scratch_block svg{
+        height: 30px;
+        width: 72px;
+        /*height: 35px;*/
+        /*width: 82px;*/
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .intro_block h4{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    main{
+        padding: 50px 20px 30px;
+    }
+    .form_block{
+        padding: 10px 40px;
+    }
+    .form_block button{
+        padding: 8px 0;
+        font-size: 14px;
+    }
+    .form_block input{
+        padding: 8px 20px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .intro_block h4{
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .form_block{
+        height: fit-content;
+        grid-area: form_block;
+        padding: 10px 30px;
+        border-radius: 10px;
+        background-color: #303A53;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .form_block p{
+        margin: 10px 0;
+        font-size: 10px;
+    }
+    .form_block h4{
+        font-size: 16px;
+        margin: 10px 0;
+    }
+    .form_block button{
+        padding: 4px 0;
+        font-size: 12px;
+    }
+    .form_block input {
+        padding: 4px 10px;
+        margin-bottom: 8px;
+    }
+    .iti {
+        margin-bottom: 8px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .intro_block h1{
+        font-size: 34px;
+    }
+    .webinar_button{
+        padding: 4px 6px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .from_scratch_block{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .form_block input{
+        font-size: 11px;
+        font-weight: 200;
+
+    }
+}
+
+
